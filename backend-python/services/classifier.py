@@ -17,7 +17,7 @@ def classify_complaint(raw_text: str) -> dict:
     Use Gemini API to classify complaint and extract structured information
     """
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         prompt = f"""Analyze this customer complaint and extract structured information.
 

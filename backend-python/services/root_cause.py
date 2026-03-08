@@ -10,7 +10,7 @@ def analyze_root_cause(complaints: list, cluster_label: str, region: str = None)
     Analyze multiple similar complaints to identify root cause
     """
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         # Prepare complaint summaries
         complaint_texts = "\n".join([f"- {c}" for c in complaints[:20]])  # Limit to 20

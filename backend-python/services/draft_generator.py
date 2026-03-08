@@ -11,7 +11,7 @@ def generate_draft_response(complaint_text: str, category: str, customer_name: s
     Returns both short (SMS/WhatsApp) and long (Email) versions
     """
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         prompt = f"""You are a professional bank customer service agent. Generate TWO response drafts for this complaint:
 

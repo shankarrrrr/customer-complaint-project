@@ -10,7 +10,7 @@ def generate_summary(raw_text: str, category: str = None, severity: str = None) 
     Generate AI summary of complaint using Gemini
     """
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         context = ""
         if category:
