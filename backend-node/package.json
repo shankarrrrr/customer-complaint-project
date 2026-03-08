@@ -1,0 +1,25 @@
+{
+  "name": "complaint-backend-node",
+  "version": "1.0.0",
+  "description": "Node.js backend for webhooks and WebSocket",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1",
+    "twilio": "^4.19.0",
+    "axios": "^1.6.5",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "redis": "^4.6.12",
+    "imap": "^0.8.19",
+    "mailparser": "^3.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
